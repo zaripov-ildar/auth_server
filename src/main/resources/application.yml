@@ -1,0 +1,27 @@
+server:
+  port: 8100
+
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    password: password
+    username: username
+    url: jdbc:postgresql://localhost:5432/auth_db
+  jpa:
+    database: postgresql
+    properties:
+      hibernate:
+        format_sql: true
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+  flyway:
+    locations: classpath:migration
+
+security_params:
+  initialRole: "CLIENT"
+  secret_key: "3979244226452948404D635166546A576E5A7234753778214125432A462D4A61"
+  expiration:
+    jwt: 3600000 # hour
+    rt: 604800000 # week
+
+
+
