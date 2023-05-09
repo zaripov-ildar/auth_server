@@ -54,9 +54,9 @@ class AuthenticationControllerTest {
     @MockBean
     private RoleRepository roleRepository;
 
-    private final String authUrl = "/api/v1/auth/authenticate";
-    private final String regUrl = "/api/v1/auth/register";
-    private final String refreshUrl = "/api/v1/auth/refreshJWT";
+    private final String authUrl = "/api/v1/authenticate";
+    private final String regUrl = "/api/v1/register";
+    private final String refreshUrl = "/api/v1/refreshJWT";
 
     @BeforeEach
     public void setUp() {

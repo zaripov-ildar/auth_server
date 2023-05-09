@@ -29,11 +29,9 @@ public class SecurityConfig {
         return http
                 .csrf().disable()
                 .authorizeHttpRequests()
-                .requestMatchers("/api/v1/auth/**")
+                .requestMatchers("/api/v1/**")
                     .permitAll()
-                .requestMatchers("/api/v1/edit/role")
-                    .hasAuthority("EDIT_ROLE")
-                .anyRequest()
+                .requestMatchers("/api/v1/refreshJwt")
                     .authenticated()
                 .and()
                 .sessionManagement()

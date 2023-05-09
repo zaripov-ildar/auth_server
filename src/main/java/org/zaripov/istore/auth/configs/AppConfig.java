@@ -37,7 +37,6 @@ public class AppConfig {
         return provider;
     }
 
-
     @Bean
     public UserDetailsService userDetailsService() {
         return email -> repository.findByEmail(email)

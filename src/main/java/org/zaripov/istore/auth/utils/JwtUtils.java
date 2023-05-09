@@ -93,7 +93,6 @@ public class JwtUtils {
             log.error(e.getMessage() + " >>> " + token);
             throw new WrongJwtException(token);
         }
-
     }
 
     private Key getSigningKey() {

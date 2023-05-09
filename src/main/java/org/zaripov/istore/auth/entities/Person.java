@@ -21,7 +21,7 @@ import java.util.Objects;
 @Table(name = "person")
 public class Person extends Timestamp implements UserDetails {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
     private Long id;
 
