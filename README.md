@@ -7,7 +7,7 @@ This project implements security using Spring Boot 3.0 and JSON Web Tokens (JWT)
 * Role & Authorities - based authorization with Spring Security
 * Customized access denied handling
 * Refresh token
-* Objects covered by tests for 65% and for 100% of the remaining classes
+* Project covered by tests for 65% lines and 100% of the remaining classes
 
 ### Technologies
 * Spring Boot 3.0.6
